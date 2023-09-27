@@ -159,10 +159,10 @@ function navigateToVideoDetails(
   document.cookie = `channelId=${channelId}; path=https://rohitdevs.github.io/YouTube_Clone2/video-details.html`;
   window.location.href = "https://rohitdevs.github.io/YouTube_Clone2/video-details.html";
 }
-
-
+//UC6wLgjFDStkG6LpxidBl2AQ
+//channelId:UCUgi6HYR5f6wigVpRGCalog
 async function getSubscription() {
-  const endPoint = `https://youtube.googleapis.com/youtube/v3/subscriptions?part=snippet&channelId=UC6wLgjFDStkG6LpxidBl2AQ&key=${API_key}&maxResults=20`;
+  const endPoint = `https://youtube.googleapis.com/youtube/v3/subscriptions?part=snippet&channelId=UCUgi6HYR5f6wigVpRGCalog&key=${API_key}&maxResults=20`;
   try {
     const response = await fetch(endPoint);
     const result = await response.json();
